@@ -195,8 +195,6 @@
         // dislaying onto screen
         let numValue = equalsPressed(firstNumber, lastNumber);
         document.getElementById("screen").innerHTML = numValue;
-        // this will display the 9/11 animation
-        create911(numValue);
         // this will reset the answer
         firstNumber = '';
         lastNumber = '';
