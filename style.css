@@ -89,9 +89,19 @@ body{
     
     transition: background-color 0.44s;
 }
-.buttons button:hover{
-    background-color: rgba(191, 157, 255, 0.404);
+
+@media (hover: hover){
+    .buttons button:hover{
+        background-color: rgba(191, 157, 255, 0.404);
+    }
 }
+
+@media (hover: none){
+    .buttons button:active{
+        background-color: rgba(191, 157, 255, 0.404);
+    }
+}
+
 .symbols button{
     background: none;
     color: none;
@@ -137,4 +147,9 @@ body{
     body{
         margin-top: 15%;
     }
+    #delete{
+        font-size: 3vh;
+    }
+
+    
 }
