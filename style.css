@@ -6,35 +6,53 @@ body{
     padding-left: 10%;
     padding-right: 10%;
     overflow-x: hidden;
+    background-color: rgb(47, 46, 51);
     
 }
 .calBorder{
     display: flex;
     flex-direction: column;
     flex-shrink: 1;
-    background-color: gray;
+    background-color: rgb(0, 8, 0);
     height: fit-content;
+    width: fit-content;
+    border: solid;
+    border-color: brown;
+    
+    
+    
     
 }
-.numScreen{
+.numberScreen{
     display: flex;
     flex-shrink: 1;
     flex-direction: column;
+    border: solid;
+    border-color: rgb(229, 189, 255);
+    margin-bottom: 10%;
+    
+    border-bottom-left-radius: 10%;
+    border-bottom-right-radius: 10%;
 }
 #screen{
     padding-left: 3%;
     font-size: 4vh;
+    color: rgb(229, 127, 255);
+    border: 10px;
+    border-color: yellow;
 }
 .buttons{
     display: flex;
     flex-direction: row;
     flex-shrink: 1;
-    color: red; 
+   
+    
 }
 .col1{
     display: flex;
     flex-direction: column;
     flex-shrink: 1;
+    
     
 }
 .col2{
@@ -55,15 +73,24 @@ body{
     flex-shrink: 1;
 }
 .buttons button{
+    
     background: none;
     color: none;
-    
+    color: green;
     border: border;
     border-style: solid ;
+    border-color: rgb(9, 75, 0);
+    border-radius: 10%;
     font-size: 6vw;
     font: Ethnocentric Rg;
     cursor: pointer;
     outline: inherit;
+    margin: 4%;
+    
+    transition: background-color 0.44s;
+}
+.buttons button:hover{
+    background-color: rgba(191, 157, 255, 0.404);
 }
 .symbols button{
     background: none;
@@ -73,15 +100,12 @@ body{
     font-size: 4vw;
     font: Ethnocentric Rg;
     cursor: pointer;
-    outline: inherit;
+    color: green;
 }
-.AnimationBorder{
-    display: flex;    
-}
-.background{
-    display: flex;
-    display: none;
-    flex-direction: row;
+#delete{
+    font-size: 3vw;
+    width: fit-content;
+    margin: 0%;
 }
 
 @media(max-width: 500px){
